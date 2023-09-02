@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* navigation bar */
+
+.navigation {
+  background-color: white;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 4rem;
+  padding-left: 1em;
+  color: #4bb1fa;
+}
+
+.links {
+  font-size: 2rem;
+  padding-right: 2em;
+}
+
+.links > a {
+  text-decoration: none;
+  padding-left: 1em;
+  color: #4bb1fa;
+}
+
+/* Main section */
+
+.main-box {
+  height: calc(100vh - 8vh);
+  background-color: #4bb1fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left side panel */
+
+.left-side-panel {
+  padding-left: 3em;
+}
+
+.h1-title {
+  font-size: 4rem;
+  color: white;
+  padding-top: 7em;
+}
+
+.h1-paragraph {
+  font-size: 2rem;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.button {
+  background-color: #fc5c65;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.button > a {
+  text-decoration: none;
+  color: white;
+}
+.button > a:visited {
+  text-decoration: none;
+}
+
+/* Right side panel */
+
+.right-side-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 2em;
+
+  width: 70em;
+  height: 34em;
+  background-color: white;
+  border: 2em solid white;
+  margin-right: 10em;
+  margin-top: 20em;
+  border-radius: 10px;
+
+  grid-template-areas:
+    "gray gray"
+    "red-left red-right"
+    "orange orange";
+}
+
+.gray {
+  height: 4em;
+
+  text-align: center;
+  background-color: #778ca3;
+  grid-area: gray;
+}
+.red-left {
+  text-align: center;
+  background-color: #fc5c65;
+  grid-area: red-left;
+  height: 6em;
+}
+
+.red-right {
+  text-align: center;
+  background-color: #fc5c65;
+  grid-area: red-right;
+  height: 6em;
+}
+.orange {
+  height: 20em;
+
+  text-align: center;
+  background-color: #fd9644;
+  grid-area: orange;
+}
+
+.gray,
+.red-left,
+.red-right,
+.orange {
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  height: 8vh;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4bb1fa;
+}
